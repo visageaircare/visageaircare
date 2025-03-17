@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visage Air Care - A.C Cleaning Services</title>
+    <title>Visage Air Care - A.C Cleaning, Repair & Installation</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
         header { background-color: #007BFF; color: white; text-align: center; padding: 20px; font-size: 24px; position: fixed; width: 100%; top: 0; z-index: 1000; }
-        .container { width: 80%; margin: auto; overflow: hidden; padding-top: 80px; }
-        .hero { background: url('https://source.unsplash.com/1600x900/?air-conditioner,cleaning') no-repeat center center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); animation: fadeIn 2s; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        section { padding: 40px 20px; text-align: center; }
-        .button { background-color: #007BFF; color: white; padding: 12px 24px; text-decoration: none; display: inline-block; border-radius: 5px; font-size: 18px; transition: 0.3s; }
+        .container { width: 90%; margin: auto; overflow: hidden; padding-top: 80px; }
+        .hero { background: url('https://source.unsplash.com/1600x900/?aircon,technician') no-repeat center center/cover; height: 500px; display: flex; align-items: center; justify-content: center; color: white; font-size: 36px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        section { padding: 50px 20px; text-align: center; }
+        .button { background-color: #007BFF; color: white; padding: 14px 28px; text-decoration: none; display: inline-block; border-radius: 5px; font-size: 20px; transition: 0.3s; cursor: pointer; border: none; }
         .button:hover { background-color: #0056b3; }
-        .services, .contact, .testimonials { background-color: white; margin: 20px 0; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .services, .pricing, .contact, .testimonials, .booking { background-color: white; margin: 30px 0; padding: 30px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
         .service-card { display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; }
-        .card { width: 30%; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin: 10px; transition: 0.3s; }
+        .card { width: 30%; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1); margin: 15px; transition: 0.3s; }
         .card:hover { transform: scale(1.05); }
-        .card img { width: 100px; height: auto; }
-        .contact form { display: flex; flex-direction: column; align-items: center; }
-        .contact input, .contact textarea { width: 80%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
-        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 20px; }
+        .card img { width: 120px; height: auto; }
+        .contact form, .booking form { display: flex; flex-direction: column; align-items: center; }
+        .contact input, .contact textarea, .booking input, .booking select { width: 80%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        footer { background: #333; color: white; text-align: center; padding: 25px; margin-top: 30px; }
     </style>
 </head>
 <body>
     <header>
-        Visage Air Care - Reliable A.C Cleaning Services
+        Visage Air Care - A.C Cleaning, Repair & Installation
     </header>
     
     <div class="hero">
-        Professional Cleaning for a Healthier Home
+        Professional A.C Services for a Cooler, Cleaner Home
     </div>
     
     <div class="container">
@@ -38,39 +37,70 @@
             <div class="service-card">
                 <div class="card">
                     <img src="https://source.unsplash.com/100x100/?cleaning" alt="Cleaning">
-                    <h3>Deep A.C Cleaning</h3>
-                    <p>Thorough cleaning to remove dust and bacteria.</p>
+                    <h3>A.C Cleaning</h3>
+                    <p>Thorough cleaning for dust, bacteria, and efficiency.</p>
                 </div>
                 <div class="card">
-                    <img src="https://source.unsplash.com/100x100/?air-filter" alt="Filter">
-                    <h3>Filter Replacement</h3>
-                    <p>Ensure clean air with fresh filters.</p>
+                    <img src="https://source.unsplash.com/100x100/?repair" alt="Repair">
+                    <h3>A.C Repair</h3>
+                    <p>Expert troubleshooting and repair services.</p>
                 </div>
                 <div class="card">
-                    <img src="https://source.unsplash.com/100x100/?maintenance" alt="Maintenance">
-                    <h3>Regular Maintenance</h3>
-                    <p>Keep your unit running efficiently year-round.</p>
+                    <img src="https://source.unsplash.com/100x100/?installation" alt="Installation">
+                    <h3>A.C Installation</h3>
+                    <p>Seamless and professional aircon installation.</p>
                 </div>
             </div>
             <a href="#booking" class="button">Book Now</a>
         </section>
+
+        <section class="pricing">
+            <h2>Pricing Plans</h2>
+            <p>Choose the best plan for your A.C maintenance needs.</p>
+            <div class="service-card">
+                <div class="card">
+                    <h3>Basic Cleaning</h3>
+                    <p>₱1,500 per unit</p>
+                </div>
+                <div class="card">
+                    <h3>Repair Service</h3>
+                    <p>Starts at ₱2,500</p>
+                </div>
+                <div class="card">
+                    <h3>Full Installation</h3>
+                    <p>₱5,000 and up</p>
+                </div>
+            </div>
+        </section>
         
+        <section class="booking">
+            <h2>Schedule a Service</h2>
+            <form>
+                <select required>
+                    <option value="">Select Service</option>
+                    <option value="cleaning">A.C Cleaning - ₱1,500</option>
+                    <option value="repair">A.C Repair - Starts at ₱2,500</option>
+                    <option value="installation">A.C Installation - ₱5,000 and up</option>
+                </select>
+                <input type="date" required>
+                <input type="time" required>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone" required>
+                <button type="submit" class="button">Confirm Booking</button>
+            </form>
+        </section>
+
         <section class="testimonials">
             <h2>What Our Customers Say</h2>
-            <p>⭐⭐⭐⭐⭐ "Amazing service! My A.C is working like new."</p>
-            <p>⭐⭐⭐⭐⭐ "Very professional and affordable!"</p>
+            <p>⭐⭐⭐⭐⭐ "Quick and reliable service! My A.C is like new."</p>
+            <p>⭐⭐⭐⭐⭐ "Affordable and professional technicians."</p>
         </section>
         
         <section class="contact">
             <h2>Contact Us</h2>
             <p>Email: support@visageaircare.com</p>
             <p>Phone: +63 912 345 6789</p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit" class="button">Send Message</button>
-            </form>
         </section>
     </div>
     
